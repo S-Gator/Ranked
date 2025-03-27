@@ -4,7 +4,7 @@ import asyncio
 from bs4 import BeautifulSoup
 
 # Discord bot token (replace with your actual token)
-TOKEN = "YOUR_DISCORD_BOT_TOKEN"
+TOKEN = "MTM1NDg5NzM5MTk3ODkzODQ2OA.G_Zi3w.lJZ26Wyhf_2dmuEK0SfNFqD0mCJiI-xzOK3jdw"
 
 # Discord User ID for private messages (Replace with your Discord User ID)
 USER_ID = 473881677828063235  # Your Discord User ID
