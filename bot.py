@@ -51,6 +51,13 @@ async def monitor_players():
         print("Invalid User ID. Check your configuration.")
         return
     
+    # Send an initial message to establish DM communication
+    try:
+        await user.send("✅ The Tzared Ranked Notifier bot is now active and will notify you when 20+ players are in the ranked room.")
+    except discord.errors.Forbidden:
+        print("❌ Unable to send DM. Make sure you have allowed DMs from non-friends.")
+        return
+    
     notified = False  # Prevent spam
     
     while not client.is_closed():
