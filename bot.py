@@ -81,4 +81,5 @@ async def on_ready():
     client.loop.create_task(monitor_players())
 
 # Run bot
+print(f"Bot Token: {TOKEN[:10]}********")
 client.run(TOKEN)
