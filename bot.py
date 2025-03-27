@@ -82,5 +82,15 @@ async def on_ready():
     client.loop.create_task(monitor_players())
 
 # Run bot
-print(f"Bot Token: {TOKEN[:10]}********")
+import os
+
+TOKEN = os.getenv("TOKEN")
+
+if not TOKEN:
+    print("❌ ERROR: TOKEN variable is missing from Railway!")
+else:
+    print(f"✅ Loaded Token: {TOKEN}")  # WARNING: This is TEMPORARY
+
+client.run(TOKEN)
+
 client.run(TOKEN)
