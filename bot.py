@@ -89,8 +89,6 @@ TOKEN = os.getenv("TOKEN")
 if not TOKEN:
     print("❌ ERROR: TOKEN variable is missing from Railway!")
 else:
-    print(f"✅ Loaded Token: {TOKEN}")  # WARNING: This is TEMPORARY
-
-client.run(TOKEN)
+    print(f"✅ Railway Passed Token: {TOKEN[:10]}********")
 
 client.run(TOKEN)
